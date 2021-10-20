@@ -9,6 +9,11 @@
    
    contributed by cvergu
    slightly modified by bmmeijers
+
+   finalized by Rick van Tatenhove & Sarah Edelaar
+   GEO1000 - Assignment 4
+   Studentnumbers: 5038405 & 5243572
+
 */
 
 #define _USE_MATH_DEFINES // https://docs.microsoft.com/en-us/cpp/c-runtime-library/math-constants?view=msvc-160
