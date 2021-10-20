@@ -1,0 +1,6 @@
+The programme nbody.py with n-size 50, has a runtime of 0.04201390000000001 seconds 
+The programme nbody.py with n-size 500, has a runtime of 0.0558848 seconds 
+The programme nbody.py with n-size 5000, has a runtime of 0.1906418 seconds 
+The programme nbody.exe with n-size 50, has a runtime of 0.008486300000000002 seconds 
+The programme nbody.exe with n-size 500, has a runtime of 0.028816699999999973 seconds 
+The programme nbody.exe with n-size 5000, has a runtime of 0.2037637 seconds 
