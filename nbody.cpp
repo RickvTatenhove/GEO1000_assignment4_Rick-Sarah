@@ -13,6 +13,8 @@
 
 #include <cmath>
 #include <iostream>
+#include <fstream>
+#include <ostream>
 
 
 // these values are constant and not allowed to be changed
@@ -249,6 +251,7 @@ int main(int argc, char **argv) {
         offset_momentum(state);
         std::cout << energy(state) << std::endl;
         for (int i = 0; i < n; ++i) {
+
             advance(state, 0.01);
         }
         std::cout << energy(state) << std::endl;
