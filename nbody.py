@@ -9,6 +9,10 @@
 # modified by Andriy Misyura
 # slightly modified by bmmeijers
 
+# finalized by Rick van Tatenhove & Sarah Edelaar
+# GEO1000 - Assignment 4
+# Studentnumbers: 5038405 & 5243572
+
 import sys
 from math import sqrt, pi as PI
 
@@ -126,15 +130,6 @@ def main(n, write=0, ref="sun"):
                     writetoscv(name, vals[0][0], vals[0][1], vals[0][2], velvec, fh)
             advance(0.01)
         report_energy()
-
-def get_key(val, DICT):
-    for key, value in DICT.items():
-        if val == value:
-            return key
-    return "There is no such Key"
-
-
-
 
 
 if __name__ == "__main__":
