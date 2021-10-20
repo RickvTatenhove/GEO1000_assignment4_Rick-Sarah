@@ -162,6 +162,14 @@ double energy(const body state[BODIES_COUNT]) {
     return energy;
 }
 
+void writetoscv(const body state[BODIES_COUNT], std::ofstream &out_stream){
+   for (unsigned int i = 0; i < BODIES_COUNT; ++i) {
+        const body &body1 = state[i];
+        out_stream << body1.name << "; " << body1.position.x << "; " <<
+        body1.position.y << "; " << body1.position.z << "; " << body1.mass << std::endl;
+    }
+}
+
 body state[] = {
         // Sun
         {
@@ -241,21 +249,34 @@ body state[] = {
 };
 
 
+
 int main(int argc, char **argv) {
+    bool write = true;
     if (argc != 2) {
-        std::cout << "This is " << argv[0] << std::endl;
+        std::cout << "This is " << argv[0]<< std::endl;
         std::cout << "Call this program with an integer as program argument" << std::endl;
         std::cout << "(to set the number of iterations for the n-body simulation)." << std::endl;
         return EXIT_FAILURE;
     } else {
+
+        std::ofstream out_stream;
+        out_stream.open("CPP Nbodyfile.csv");
+        if (write) {
+            out_stream << "Name of the body; position x; position y; position z; mass of the body" << std::endl;
+        }
+
         const unsigned int n = atoi(argv[1]);
         offset_momentum(state);
         std::cout << energy(state) << std::endl;
-        for (int i = 0; i < n; ++i) {
 
+        for (int i = 0; i < n; ++i) {
+            if (write) {
+                writetoscv(state, out_stream);
+            }
             advance(state, 0.01);
         }
         std::cout << energy(state) << std::endl;
+        out_stream.close();
         return EXIT_SUCCESS;
     }
 }
