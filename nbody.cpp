@@ -256,7 +256,7 @@ body state[] = {
 
 
 int main(int argc, char **argv) {
-    bool write = true;
+    bool write = false;
     if (argc != 2) {
         std::cout << "This is " << argv[0]<< std::endl;
         std::cout << "Call this program with an integer as program argument" << std::endl;

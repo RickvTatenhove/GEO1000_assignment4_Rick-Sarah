@@ -2,7 +2,8 @@ from time import perf_counter
 import os
 import subprocess
 
-To_benchmark = ["nbody.py", "nbody_release.exe", "nbody_debug.exe"]
+#To_benchmark = ["nbody.py", "nbody_release.exe", "nbody_debug.exe"]
+To_benchmark = ["nbody.py", "nbody_release_nowrite.exe", "nbody_debug_nowrite.exe"]
 Simul_sizes = [5000, 500000, 5000000, 50000000]
 
 def write_runtimes(p_list, size_list):
@@ -20,7 +21,7 @@ def write_runtimes(p_list, size_list):
                          format(programme, simsize,  count_runtime(programme, simsize)))
 
 
-def count_runtime(name, n_size = 1):
+def count_runtime(name, n_size = 0):
     """
     Returns the runtime of executable 'name' in seconds
 

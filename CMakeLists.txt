@@ -3,5 +3,5 @@ project(nbody)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(nbody_debug nbody.cpp)
+add_executable(nbody_release_nowrite nbody.cpp)
 

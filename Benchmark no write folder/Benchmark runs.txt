@@ -1,0 +1,12 @@
+The programme nbody.py with n-size 5000, has a runtime of 0.0782943 seconds 
+The programme nbody.py with n-size 500000, has a runtime of 3.4853861 seconds 
+The programme nbody.py with n-size 5000000, has a runtime of 34.9564024 seconds 
+The programme nbody.py with n-size 50000000, has a runtime of 336.4499164 seconds 
+The programme nbody_release_nowrite.exe with n-size 5000, has a runtime of 0.036665099999993345 seconds 
+The programme nbody_release_nowrite.exe with n-size 500000, has a runtime of 0.047780900000020665 seconds 
+The programme nbody_release_nowrite.exe with n-size 5000000, has a runtime of 0.40029409999999643 seconds 
+The programme nbody_release_nowrite.exe with n-size 50000000, has a runtime of 3.9509261000000038 seconds 
+The programme nbody_debug_nowrite.exe with n-size 5000, has a runtime of 0.05661380000003646 seconds 
+The programme nbody_debug_nowrite.exe with n-size 500000, has a runtime of 0.42206349999997883 seconds 
+The programme nbody_debug_nowrite.exe with n-size 5000000, has a runtime of 4.1210451000000035 seconds 
+The programme nbody_debug_nowrite.exe with n-size 50000000, has a runtime of 40.735730399999966 seconds 
