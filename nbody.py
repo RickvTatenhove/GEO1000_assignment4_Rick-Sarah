@@ -12,6 +12,7 @@
 # finalized by Rick van Tatenhove & Sarah Edelaar
 # GEO1000 - Assignment 4
 # Studentnumbers: 5038405 & 5243572
+# finalized at: 27-10-2021
 
 import sys
 from math import sqrt, pi as PI
