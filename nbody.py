@@ -118,7 +118,7 @@ def writetoscv(name, x, y, z, velvec, openobjectfile):
     openobjectfile.write("{}; {}; {}; {}; {};\n".format(name, x, y, z, velvec))
 
 def main(n, write=0, ref="sun"):
-    with open("test2.csv", "w") as fh:
+    with open("testpy.csv", "w") as fh:
         if write > 0:
             fh.write("Name of the body; position x; position y; position z; size of velocity vector\n")
         offset_momentum(BODIES[ref])
